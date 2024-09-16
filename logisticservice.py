@@ -17,7 +17,8 @@ def calculate_wages(successful_delivery):
 		amountPerParcel = 500
 		
 	else:
-		return "error"
+		return "invalid number of deliveries"
+
 
 	wages = successful_delivery * amountPerParcel + BASE_PAY
 	

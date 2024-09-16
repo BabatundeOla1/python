@@ -1,56 +1,96 @@
-total_deposit = 0
+def make_withdraw():
 
-balance = 0
+	print("Withraw>>>\n")
 
-menu = """ 
-	WELCOME TO SWIFT BANK.
-	--------------------
-	1 >>> Deposit.
-	2 >>> Withdrawal.
-	3 >>> Balance.
-	4 >>> Exit.
-	--------------------
+	balance = 1000
+		
+	withdraw = float(input("Enter amount to be withdrawn: "))
 
-"""
+	if withdraw > balance:
+		print("Insufficient balance!")
 
-choice = input(menu)
+	if withdraw <= 0:
+		print("Error!!")
+
+	if withdraw <= -1:
+		print("THANK YOU FOR BANKING WITH US!")
+
+	if withdraw < balance:
+		balance -= withdraw
+
+		print(balance)
+
+	mainmenu()
+
+
+
+
+def make_deposit():
+
+	balance = 0
+
+	total_deposit = 0
+
+	print("Deposit>>>\n")
+
+	while True:
+		deposit = float(input("Enter amount to be deposited and (-1 to the menu): "))
+		balance +=  deposit
+
+		if deposit <= -1: 
+			print(f'your total sum of money is {balance}')
+			
+			break
+	mainmenu()
+		
+
+def check_balance():
+
+	print("Balance>>>\n")
+
+	balance = 0
+	
+	total_balance = make_deposit() - make_withdraw()
+
+	print(f'Your Total Balance is= {total_balance}')
+
+
+
+
+
+
+
+
+
+def mainmenu():
+
+	menu = """ 
+		WELCOME TO SWIFT BANK.
+		--------------------
+		1 >>> Deposit.
+		2 >>> Withdrawal.
+		3 >>> Balance.
+		4 >>> Exit.
+		--------------------
+
+	"""
+	print(menu)
+
+mainmenu()
+
+choice = input("enter a number: ")
 
 match choice:
 
-	case'1' : 
-		print("Deposit.")
+	case "1" :
+		make_deposit()
 
-		while True:
+	case"2" :
+		make_withdraw()
 
-			deposit = float(input("Enter amount to be deposited: "))
-
-			if deposit == -1:
-				print("THANK YOU FOR BANKING WITH US!", menu)
-				break
-
-			total_deposit +=  deposit
-
-	case'2' :
-		
-		print("Withraw.")
-		
-		withdraw = float(input("Enter amount to be withdrawn: "))
-
-		if withdraw > total_deposit:
-			print("Insufficient balance!")
-
-		if withdraw == -0:
-			print("Error!!")
-
-		if withdraw == -1:
-			print("THANK YOU FOR BANKING WITH US!", menu)
-			
 	case'3' :
-		print("Balance.")
-
-		balance = total_deposit - withdraw
-
-		print("Your Balance:$",balance)
+		check_balance()
+	
 
 	case'4' :
 		print("Exit.")
