@@ -20,14 +20,13 @@ match choice:
 	case'1' : 
 		print("Deposit.")
 	
-		while True:
+		deposit = float(input("Enter amount to be deposited: "))
+	
+		'''while True:
 
-			deposit = float(input("Enter amount to be deposited and (-1 to the menu): "))
+			deposit = float(input("Enter amount to be deposited and (-1 to the menu): "))'''
 					
 			balance = deposit + total_deposit
-
-			if deposit == -1:
-				break
 
 		print(balance )
 

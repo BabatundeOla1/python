@@ -1,7 +1,5 @@
 def get_evennumber(number):
 
-	#for number in range(1, 1000):
-
 		if number > 999 and number < 0:
 			print("Invalid")
 

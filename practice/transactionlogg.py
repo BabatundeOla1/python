@@ -10,10 +10,11 @@ menu = """
 	3 >>> Balance.
 	4 >>> Exit.
 	--------------------
-
 """
 
 choice = input(menu)
+
+print("Select an Option")
 
 match choice:
 
@@ -24,11 +25,13 @@ match choice:
 
 			deposit = float(input("Enter amount to be deposited: "))
 
+			total_deposit +=  deposit
+
 			if deposit == -1:
-				print("THANK YOU FOR BANKING WITH US!", menu)
+				#print("THANK YOU FOR BANKING WITH US!", menu)
 				break
 
-			total_deposit +=  deposit
+			
 
 	case'2' :
 		

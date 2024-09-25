@@ -1,35 +1,26 @@
+deposit = float(input("Enter amount to be deposited: "))
+
 def make_deposit(deposit):
 
 	balance = 0
-		deposit = float(input("Enter amount to be deposited(-1 to end): "))
 
-		balance += deposit
+	balance += deposit
 
-		if deposit == -1:
-			break
+	#if deposit == -1:
 
-		return balance
+		#print("Invalid")
+		
+	print(balance)
 
-make_deposit()
-
-
+#make_deposit(2000)
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-'''def mainmenu():
+'''
+def mainmenu():
 
 	menu = """ 
 		WELCOME TO SWIFT BANK.
