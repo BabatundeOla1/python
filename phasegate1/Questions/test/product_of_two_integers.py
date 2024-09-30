@@ -1,6 +1,7 @@
-
-
 def get_product(first_number, second_number):
+
+	'''if not isinstance(first_number, (int, float)):
+		raises ValueError("invalid" )'''
 
 	product = 0
 
@@ -9,8 +10,6 @@ def get_product(first_number, second_number):
 		product = product + first_number
 
 	return product
+		
 
 
-#print(product)
-
-get_product(9, 2)
