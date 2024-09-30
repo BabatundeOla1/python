@@ -1,11 +1,13 @@
-a_list = []
+def even_position(numbers):
 
-even_index = 0
+	for count in range(len(numbers)):
+		if numbers[count] % 2 == 0:
+		
+			even_index = numbers[count]
+			
+			print(even_index)
 
-for numbers in range(0, 6):
-	a_list += [numbers]
-	
-	if a_list[numbers] % 2 == 0:
-		even_index = a_list[numbers]
 
-		print(even_index)
+list_numbers = [1, 2, 3, 4, 5, 6]
+even_position(list_numbers)
+

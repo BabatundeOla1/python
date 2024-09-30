@@ -1,6 +1,6 @@
 userinput = int(input("Enter the number of lines: "))
 
-for row in range(0, userinput+1):
+for row in range(0, userinput):
 
 	print(" ")
 	
