@@ -17,25 +17,36 @@ for
 even_position(list_numbers)
 
 
-		
-'''
+	
 list = [1, 22, 4, 7, 11, 16, 9, 15, 3, 8]
 
 oddsum = 0
 evensum = 0
+average = 0
+sum = 0
 
 for count in range(len(list)):
 
-	if(count % 2 != 0):
+	sum = sum + count
 
-		oddsum = oddsum + count
+	#average = sum // count
 
 	if (count % 2 == 0):
 		
 		evensum = evensum + count
 
+	if(count % 2 != 0):
+
+		oddsum = oddsum + count
+
+	
+
 print(evensum)					
 print(oddsum)
+print(count)
+print(sum)
+
+'''
 
 
 		
