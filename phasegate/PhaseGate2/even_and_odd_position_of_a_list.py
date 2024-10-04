@@ -1,52 +1,49 @@
-'''list = [1, 22, 4, 7, 11, 16, 9, 15, 3, 8]
-
-count = 0
-
-for length in list:
-
-	count++
-
-	print(count)
-
-for
-
-	if numbers % 2 == 0:
-					
-			print(count)
-
-even_position(list_numbers)
-
-
-	
-list = [1, 22, 4, 7, 11, 16, 9, 15, 3, 8]
+lists = [1, 3, 4, 7, 2, 6, 9, 5, 3, 8]
 
 oddsum = 0
 evensum = 0
 average = 0
 sum = 0
 
-for count in range(len(list)):
+def get_length(number):
 
-	sum = sum + count
+	count = 0
 
-	#average = sum // count
+	for numbers in list(number):
 
-	if (count % 2 == 0):
+		count = count + 1
+		
+	print(count)
+
+get_length(lists)
+
+
+
+def get_even(number):
+	
+	if (get_length(number) % 2 == 0):
 		
 		evensum = evensum + count
 
+	return evensum
+
+get_even(lists)
+
+
+
+
+'''def get_odd(number):
+
 	if(count % 2 != 0):
 
-		oddsum = oddsum + count
+		oddsum =oddsum + count
+
+	return oddsum
+
+get_odd(lists)'''
 
 	
 
-print(evensum)					
-print(oddsum)
-print(count)
-print(sum)
-
-'''
 
 
 		
