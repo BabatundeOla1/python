@@ -8,6 +8,6 @@ def even_position(numbers):
 			print(even_index)
 
 
-list_numbers = [1, 2, 3, 4, 5, 6]
+
 even_position(list_numbers)
 
