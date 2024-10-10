@@ -1,11 +1,8 @@
 main_menu = """ 	   Marital Status 
 -------------------------
 0 -> single
-
 1 -> Married
-
 2 -> separate
-
 3 -> Head of house
 
 -------------------------
