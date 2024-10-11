@@ -8,7 +8,7 @@ for column in range(5):
 			print(row, end = " ")
 
 
-for column2 in range(5, 1, -1 ):
+for column2 in range(5, 0, -1 ):
 	print(" ")
 	
 	for row2 in range(1, column2 + 1):
