@@ -1,35 +1,23 @@
-"""
-prompt user to enter principal
-prompt user to enter annual interest rate
-prompt user to enter duration
-convert annual interest rate to monthly interest rate
-convert duration to month
-calculate for the monthly monthly payment 
-"""
-
 principal = float(input("Enter principal amount: "))
-annual_interest_rate = float(input("Enter annual interest rate: "))
-duration = int(input("Enter duration: "))
 
+annual_interest_rate = float(input("Enter annual interest rate: "))
+
+duration = int(input("Enter duration: "))
 
 PERCENTAGE = 100
 
-MONTHSINYEAR = 12
+print("year","\t","roi","\t", " ", "amount")
 
-monthly_interest_rate = annual_interest_rate // PERCENTAGE
+for count in range(duration):
 
-duration_in_months = duration * MONTHSINYEAR 
+	interest = annual_interest_rate / PERCENTAGE
 
-first_step = monthly_interest_rate * ((1 + monthly_interest_rate) ** duration_in_months)
+	amount = principal * interest
 
-second_step = ((1 + monthly_interest_rate) ** duration_in_months) - 1
+	yearly_return = principal + amount
 
-monthly_payment = principal * (first_step // second_step)
-
-print("Monthly Payment is $", round(monthly_payment, 2))
-
-
-
+	
+	print(count, "\t",amount, "\t", yearly_return)
 
 
 

@@ -4,9 +4,7 @@ def divide_or_square(number):
 		raise ValueError("Invalid number")
 
 	if number % 5 == 0:
-		squareroot = number ** 0.5
-
-		return squareroot
+		 return number ** 0.5
 
 	if number % 5 != 0:
 		

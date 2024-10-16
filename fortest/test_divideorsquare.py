@@ -1,12 +1,3 @@
-""" 
-import the type of test to be conducted
-create a class to inherit a TestCase
-call the class name and the function name to check if function exist
-use the assertEquals to check if arguement passed is divisible by 5 and returns arguements square root
-use the assertRaises to check argument passed is a type string 
-use the assertRaises to check argument passed is a negative numbers
-"""
-
 import unittest 
 import divideorsquare
 

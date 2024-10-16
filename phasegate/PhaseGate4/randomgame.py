@@ -1,6 +1,4 @@
-import random
-
-randomnumber = random.randrange(50, 50, 50).split()
+random = ['2','13', '14']
 
 userinput = input("Guess the three Numbers: ")
 
