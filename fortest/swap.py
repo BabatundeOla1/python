@@ -9,7 +9,9 @@ def get_swap(array):
 			array[count] = array[count-1]
 			array[count-1] = temp
 
-			print(array[count])
+	return(array)
 
 
 get_swap(list)
+
+
