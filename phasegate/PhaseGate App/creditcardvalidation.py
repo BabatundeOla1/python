@@ -3,9 +3,6 @@ userinput = input("Enter card number: ")
 if not userinput.isdigit():
 	raise ValueError("input must be only digit")
 
-#userinput = "5199110824684028"
-
-
 def validate_card(input):
 
 	try:
