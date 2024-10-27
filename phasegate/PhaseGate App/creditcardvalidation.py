@@ -12,7 +12,6 @@ def validate_card(input):
 		if not input.isdigit():
 			raise ValueError("input must be only digit")
 
-
 		if input.startswith("4"):
 			return "VisaCard"
 
@@ -77,8 +76,6 @@ def check_validity(input):
 	except ValueError as e:
 		return f"Error: {e}"
 		
-		
-
 
 print("************************************")
 
