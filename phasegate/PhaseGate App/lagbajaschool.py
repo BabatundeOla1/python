@@ -16,24 +16,13 @@ def get_student_scores_and_grade(number_of_students, number_of_subjects):
 	
 			student_subject = int(input(f"Enter score for subject {subjects}: "))
 
-			student_grades[scores][subjects] = student_subject
+			studentsGrades[students][subjects] = student_subjects
 
-			'''if(student_subject < 0 or student_subject > 100):
+			if(student_subject < 0 or student_subject > 100):
 				print("Invalid Input, Enter Score Again")
-				subjects--'''
+				#subjects--
 
 userinput = get_student_scores_and_grade(number_of_students, number_of_subjects)
 print(userinput)
 	
 	
-'''
-
-
-student_tuple = ["olaleye", "tunde", 3]
-
-student_tuple2 = student_tuple
-
-student_tuple += (35, 2.3, "korede")
-
-print(student_tuple)
-'''
