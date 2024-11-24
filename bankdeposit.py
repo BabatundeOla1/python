@@ -36,8 +36,6 @@ while withdraw != -1:
 
 	total_amount_withdrawn = total_amount_withdrawn + withdraw
 
-
-
 net_amount = total_amount_deposited - total_amount_withdrawn
 	
 print("Net amount =", + net_amount)

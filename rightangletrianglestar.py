@@ -1,9 +1,6 @@
-userinput = int(input("Enter the number of lines: "))
+userinput = int(input("Enter the number of columns: "))
 
-for row in range(0, userinput):
-
-	print(" ")
-	
-	for column in range(0, row):
-
-			print("*", end = " ")
+for rows in range(userinput):
+    for columns in range(rows):
+        print("*", end=" ")
+    print()

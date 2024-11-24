@@ -14,17 +14,17 @@ def validate_credit_card(card_number):
 	if card_number < "1":
 		return "Value Error"
 
-	'''if card_number.startswith("4"):
+	elif card_number.startswith("4"):
 		return "valid"
 		
-		if len(card_number) == 16:
-			return  "This is a valid Visa card."
+	elif len(card_number) == 16:
+		return  "This is a valid Visa card."
 
 	elif card_number.startswith("5"):
 		return "valid"
 
-		if len(card_number) == 14:
-			return  "This is a valid Visa card."
+	if len(card_number) == 14:
+		return  "This is a valid Visa card."
 
 	else:
 		return "Invalid"

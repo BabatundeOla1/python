@@ -13,7 +13,6 @@ def personality_questions_extrovert_introvert(name):
 	for index in range(len(extrovert_and_introvert)):
 	
 		while True:
-
 			print(f"Question {index + 1}: ")
 			print(extrovert_and_introvert[index][0], extrovert_and_introvert[index][1])
 
@@ -23,36 +22,27 @@ def personality_questions_extrovert_introvert(name):
 				extrovert_and_introvert[index][2] = "A"
 				total_answer_a += 1
 				break
-
 			elif user_input == "B":
 				extrovert_and_introvert[index][2] = "B"
 				total_answer_b += 1
 				break
-
 			else:
 				print("Expected A or B as response\n I know this is an error please try again")
-				
-
 	print()
 	print(f"Hello {name} You Selected:")
 
 	for answer in range(len(extrovert_and_introvert)):
-
 		if extrovert_and_introvert[answer][2] == "A":
 			print(extrovert_and_introvert[answer][0])
-
 		if extrovert_and_introvert[answer][2] == "B":
 			print(extrovert_and_introvert[answer][1])
-
 	print()
 	print(f"Number of A selected: {total_answer_a}")
 	print(f"Number of B selected: {total_answer_b}")
-
 	if total_answer_a > 2:
 		print("E")
 	else:
 		print("I")
-
 print(personality_questions_extrovert_introvert(name))
 
 
